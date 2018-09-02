@@ -1,0 +1,17 @@
+{
+  "name": "func-toolkit",
+  "version": "1.0.0",
+  "description": "func-toolkit provides functional utilities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "HubCodes",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0"
+  }
+}
