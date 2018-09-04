@@ -4,6 +4,7 @@ const filter = require('./filter');
 const foldLeft = require('./foldLeft');
 const foldRight = require('./foldRight');
 const map = require('./map');
+const zip = require('./zip');
 
 module.exports = {
   compose,
@@ -12,4 +13,5 @@ module.exports = {
   foldLeft,
   foldRight,
   map,
+  zip,
 };
