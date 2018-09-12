@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/HubCodes/func-toolkit.svg?branch=master)](https://travis-ci.org/HubCodes/func-toolkit)
+
 func-toolkit
 ===
 The func-toolkit includes several useful function combinator and utilities. The compinator provided by the func-toolkit can use any iterable object. 
