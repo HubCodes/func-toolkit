@@ -4,6 +4,7 @@ const filter = require('./filter');
 const foldLeft = require('./foldLeft');
 const foldRight = require('./foldRight');
 const map = require('./map');
+const partialFunction = require('./partialFunction');
 const zip = require('./zip');
 
 module.exports = {
@@ -13,5 +14,6 @@ module.exports = {
   foldLeft,
   foldRight,
   map,
+  partialFunction,
   zip,
 };
