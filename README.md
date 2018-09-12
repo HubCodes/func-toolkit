@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/HubCodes/func-toolkit.svg?branch=master)](https://travis-ci.org/HubCodes/func-toolkit)
+[![Coverage Status](https://coveralls.io/repos/github/HubCodes/func-toolkit/badge.svg)](https://coveralls.io/github/HubCodes/func-toolkit)
 
 func-toolkit
 ===
