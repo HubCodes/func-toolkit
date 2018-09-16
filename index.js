@@ -1,3 +1,4 @@
+const all = require('./all');
 const andThen = require('./andThen');
 const compose = require('./compose');
 const filter = require('./filter');
@@ -9,8 +10,9 @@ const partition = require('./partition');
 const zip = require('./zip');
 
 module.exports = {
-  compose,
+  all,
   andThen,
+  compose,
   filter,
   foldLeft,
   foldRight,
