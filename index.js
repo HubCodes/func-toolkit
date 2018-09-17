@@ -1,5 +1,6 @@
 const all = require('./all');
 const andThen = require('./andThen');
+const any = require('./any');
 const compose = require('./compose');
 const filter = require('./filter');
 const foldLeft = require('./foldLeft');
@@ -12,6 +13,7 @@ const zip = require('./zip');
 module.exports = {
   all,
   andThen,
+  any,
   compose,
   filter,
   foldLeft,
