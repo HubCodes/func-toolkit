@@ -37,4 +37,7 @@ const func = $.partialFunction((arg1, arg2) => {
   return arg1;
 });
 const result = func(arg1, arg2); // 1
+
+const func2 = $.partialFunction((arg1) => arg1 > 0, (arg) => arg);
+func2.isDefinedAt(10); // true
 ```
