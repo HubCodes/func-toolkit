@@ -1,13 +1,13 @@
-const assert = require('assert');
-const $ = require('../');
+const assert = require("assert");
+const $ = require("../");
 
-describe('distinct test', () => {
+describe("distinct test", () => {
   const array = [1, 1, 2, 2, 3, 4, 6];
-  it('work with array', () => {
+  it("work with array", () => {
     const result = $.distinct(array);
     assert.deepEqual(result, [1, 2, 3, 4, 6]);
   });
-  it('work with generator', () => {
+  it("work with generator", () => {
     function* generator() {
       for (let i = 0; i < 6; i++) {
         yield i;
@@ -17,9 +17,9 @@ describe('distinct test', () => {
     const result = $.distinct(generator());
     assert.deepEqual(result, [0, 1, 2, 3, 4, 5]);
   });
-  it('work with string', () => {
-    const string = 'LLLOOREADMSE';
+  it("work with string", () => {
+    const string = "LLLOOREADMSE";
     const result = $.distinct(string);
-    assert.deepEqual(result.join(''), 'LOREADMS');
+    assert.deepEqual(result.join(""), "LOREADMS");
   });
 });
