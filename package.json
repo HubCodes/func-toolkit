@@ -9,7 +9,9 @@
     "combinator"
   ],
   "main": "dist/index.js",
+  "types": "index.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "mocha",
     "cover": "node_modules/.bin/istanbul cover _mocha",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
@@ -24,6 +26,7 @@
     "eslint-plugin-import": "^2.14.0",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
-    "mocha-lcov-reporter": "^1.3.0"
+    "mocha-lcov-reporter": "^1.3.0",
+    "typescript": "^3.4.5"
   }
 }
