@@ -3,15 +3,27 @@
 
 [![NPM](https://nodei.co/npm/func-toolkit.png)](https://nodei.co/npm/func-toolkit/)
 
-func-toolkit
-===
+# func-toolkit
+
 The func-toolkit includes several useful function combinator and utilities. The compinator provided by the func-toolkit can use any iterable object. func-toolkit provides all of these without any dependencies.
 
 ## How to use
 
-### Example: compose
-``` js
-const $ = require('func-toolkit');
+Most examples can find on test code.
+
+### Example: all
+
+```ts
+import { all } from "func-toolkit";
+
+const data = [2, 10, 4, 6];
+const isAllEven = all(data, element => element % 2 == 0);
+```
+
+### Example: andThen
+
+```ts
+import { andThen } from "func-toolkit";
 
 function f(x) {
   return 2 * x;
@@ -21,23 +33,26 @@ function g(x) {
   return x + 2;
 }
 
-const gf = $.compose(f, g);
-gf(4);  // 12
-
+const fg = andThen(f, g);
+fg(3); // 8
 ```
 
-### Example: partialFunction
+### Example: compose
 
-``` js
-const arg1 = 1;
-const arg2 = 'a';
-const func = $.partialFunction((arg1, arg2) => {
-  return typeof arg1 == 'number' && typeof arg2 == 'string';
-}, (arg1, arg2) => {
-  return arg1;
-});
-const result = func(arg1, arg2); // 1
+```ts
+import { compose } from "func-toolkit";
 
-const func2 = $.partialFunction((arg1) => arg1 > 0, (arg) => arg);
-func2.isDefinedAt(10); // true
+function f(x) {
+  return 2 * x;
+}
+
+function g(x) {
+  return x + 2;
+}
+
+const gf = compose(
+  f,
+  g
+);
+gf(4); // 12
 ```
