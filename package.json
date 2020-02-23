@@ -16,6 +16,7 @@
     "cover": "node_modules/.bin/istanbul cover _mocha",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
+  "repository": "https://github.com/HubCodes/func-toolkit",
   "author": "HubCodes",
   "license": "MIT",
   "devDependencies": {
